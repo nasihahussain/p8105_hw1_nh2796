@@ -1,0 +1,27 @@
+---
+title: "p8105_hw1_nh2796"
+output: github_document
+date: "2024-09-21"
+---
+
+```{r}
+library(tidyverse)
+```
+
+## problem 1
+
+The Penguins Dataset includes information on each of the various observed penguins. The dataset includes the species, the island upon which the penguin was observed, the bill length and depth, the flipper length, the body mass, the sex of the penguin, and the year that the penguin was observed. The dataset includes 344 rows and 8 columns. The mean flipper length is 200.9152. 
+
+```{r}
+data("penguins", package = "palmerpenguins")
+nrow(penguins)
+ncol(penguins)
+mean(penguins$flipper_length_mm, na.rm = TRUE)
+```
+
+```{r}
+
+```
+
+
+
