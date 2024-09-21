@@ -19,10 +19,20 @@ ncol(penguins)
 mean(penguins$flipper_length_mm, na.rm = TRUE)
 ```
 
+
 ```{r}
 penguin_plot <- ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 ggsave("scatterplot_penguin.png", plot = penguin_plot)
 ```
 
+## problem 2
 
+```{r}
+problem2_df = tibble(
+  random_sample = rnorm(10),
+  vec_logical = random_sample > 0,
+  vec_char = c("My", "Name", "Is", "Nasiha", "And", "I", "Like", "Penguins", "A", "Lot"),
+  vec_factor = factor(c("level 1", "level 2", "level 3","level 1", "level 2", "level 3", "level 1", "level 2", "level 3", "level 1"))
+)
+```
 
