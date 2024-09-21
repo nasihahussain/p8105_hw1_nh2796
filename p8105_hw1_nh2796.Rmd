@@ -20,8 +20,8 @@ mean(penguins$flipper_length_mm, na.rm = TRUE)
 ```
 
 ```{r}
-ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm)) + geom_point()
-
+penguin_plot <- ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
+ggsave("scatterplot_penguin.png", plot = penguin_plot)
 ```
 
 
