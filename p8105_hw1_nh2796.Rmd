@@ -34,6 +34,7 @@ problem2_df = tibble(
   vec_char = c("My", "Name", "Is", "Nasiha", "And", "I", "Like", "Penguins", "A", "Lot"),
   vec_factor = factor(c("level 1", "level 2", "level 3","level 1", "level 2", "level 3", "level 1", "level 2", "level 3", "level 1"))
 )
+print(problem2_df)
 ```
 
 Mean of each variable:
