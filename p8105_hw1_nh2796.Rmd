@@ -36,3 +36,11 @@ problem2_df = tibble(
 )
 ```
 
+Mean of each variable:
+```{r}
+mean(problem2_df$random_sample)
+mean(problem2_df$vec_logical)
+mean(problem2_df$vec_char)
+mean(problem2_df$vec_factor)
+```
+
